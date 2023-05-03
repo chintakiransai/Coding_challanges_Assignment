@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+enter <input type="text" name="" id="nam">
+<button onclick="time()" >sub</button>
+<p id="result"></p>
+<script>
+    let inp=document.getElementById("nam");
+    let res=document.getElementById("result");
+ 
+    let time=() =>setTimeout(reverse, 5000);
+
+    function reverse() {
+        rev="";
+        let str=inp.value;
+        for(let i=0; i<str.length;i++ )
+        {
+            rev=str[i]+rev;
+        }
+       res.innerText=rev;
+    }
+  
+</script>
+</body>
+</html>

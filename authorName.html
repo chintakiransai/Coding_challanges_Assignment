@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let books = [{name:'marvel', year:1930},{name:'DC', year:1970},{name:'moon knight', year:2022},{name:'msmarvel', year:2014}];
+        let res= books.filter(ele => {
+            return ele.year >= 2010 
+           
+        })
+        let captalizeAuthor=res.map(el=> {
+            return {
+                name: el.name.toUpperCase(),
+                year : el.year
+            };
+        })
+         console.log(captalizeAuthor);
+    </script>
+</body>
+</html>
